@@ -1,5 +1,10 @@
 import React from "react";
+import Editor from './Editor';
 
-const HelloMessage = ({ name }) => <h1>Hello, {name}!</h1>;
+function App() {
+  return (
+    <div><Editor /></div>
+  )
+}
 
-export default HelloMessage
+export default App
