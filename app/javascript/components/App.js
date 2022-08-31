@@ -1,9 +1,12 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Editor from './Editor';
 
 function App() {
   return (
-    <div><Editor /></div>
+    <Routes>
+      <Route path="events/*" element={<Editor />}/>
+    </Routes>
   )
 }
 
